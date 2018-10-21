@@ -1,2 +1,2 @@
-# usps-php-sdk
+# usps-php-library
 usps scane base shipping label 
