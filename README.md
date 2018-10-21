@@ -1,11 +1,20 @@
 # usps-php-library for merchandise-return-service-label-api
 usps scane base  shipping label 
 
+```
 require_once './vendor/autoload.php';
+
+```
+
+```
 
 \Usps\lib\Usps::setApiUserName('UspsUserName');
 \Usps\lib\Usps::setApiPassword('UspsPassword');
 \Usps\lib\Usps::setApiPermit('UspsPermit');
+
+```
+
+```
 
 $from_address = array(
 	'name' => "mati ullah",
@@ -17,6 +26,11 @@ $from_address = array(
 	'state' => 'FL',
 );
 
+
+```
+
+```
+
 $to_address = array(
 	'name' => "mobile and wireless",
 	'email' => "customersupport@mobile.com",
@@ -27,6 +41,10 @@ $to_address = array(
 	'state' => 'NY',
 );
 
+```
+
+```
+
 $xml = \Usps\lib\Shipment::create(array(
 			'from_address' => $from_address,
 			'to_address'   => $to_address,
@@ -35,4 +53,6 @@ $xml = \Usps\lib\Shipment::create(array(
 			)
 		);
 
-	echo "<pre>";print_r($xml);exit;
+echo "<pre>";print_r($xml);exit;
+
+```
